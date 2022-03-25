@@ -7,19 +7,16 @@
 - [Objetivos](#Objetivos)
 - [Lista de objetivos](#lista-de-objetivos)
   - [1 - Testes Unitários](#1---testes-unitários)
-  - [2 - Endpoint POST `/login`](#2---endpoint-POST-login)
-  - [3 - Endpoint GET `/user`](#3---endpoint-GET-user)
-  - [4 - Endpoint GET `/user/:id`](#4---endpoint-GET-userid)
-  - [5 - Endpoint POST `/categories`](#5---endpoint-POST-categories)
-  - [6 - Endpoint GET `/categories`](#6---endpoint-GET-categories)
-  - [7 - Endpoint POST `/post`](#7---endpoint-POST-post)
-  - [8 - Endpoint GET `/post`](#8---endpoint-GET-post)
-  - [9 - Endpoint GET `post/:id`](#9---endpoint-GET-postid)
-  - [10 - Endpoint PUT `/post/:id`](#10---endpoint-PUT-postid)
-  - [11 - Endpoint DELETE `post/:id`](#11---endpoint-DELETE-postid)
-  - [12 - Endpoint DELETE `/user/me`](#12---endpoint-DELETE-userme)
-  - [13 - Endpoint GET `post/search?q=:searchTerm`](#13---endpoint-GET-postsearchqsearchterm)
-- [Implementações Futuras](#implementações-futuras )
+  - [2 - Endpoints GET `/products e products/:id`](#2---endpoints-GET-products-e-productsid)
+  - [3 - Endpoint POST `/products`](#3---endpoint-POST-products)
+  - [4 - Endpoint PUT `/products/:id`](#4---endpoint-PUT-productsid)
+  - [5 - Endpoint DELETE `/products`](#5---endpoint-DELETE-products)
+  - [6 - Endpoints GET `/sales e sales/:id`](#6---endpoints-GET-sales-e-salesid)
+  - [7 - Endpoint POST `/sales`](#7---endpoint-POST-sales)
+  - [8 - Endpoint PUT `/sales/:id`](#8---endpoint-PUT-salesid)
+  - [9 - Endpoint DELETE `/sales`](#9---endpoint-DELETE-sales)
+  - [10 - Controle de Estoque](#10---controle-de-estoque)
+  [Implementações Futuras](#implementações-futuras )
 
 
 # Sobre o Projeto 
@@ -55,7 +52,7 @@
 - Realização de testes para acompanhar o desenvolvimento da aplicação.
 - O comando `npm run test:mocha` mostra o percentual da aplicação completo pelos testes.
 
-## 2 - Endpoint GET `/products` e `/products/:id`
+## 2 - Endpoints GET `/products` e `/products/:id`
 - O retorno do endpoint deve retornar um array de objetos com todos os produtos (/products) ou um objeto com o produto especificado (/products/:id);
 - Estrutura do retorno:
   ```json
@@ -113,7 +110,7 @@
 - O endpoint uma mensagem informando a deleção do produto e o status correspondente.
 
 
-## 6 - Endpoint GET `/sales` e `/sales/:id`
+## 6 - Endpoints GET `/sales` e `/sales/:id`
 - O retorno do endpoint deve retornar um array de objetos com todos os produtos (/sales) ou um objeto com o produto especificado (/sales/:id);
 - Estrutura do retorno:
   ```json
@@ -181,11 +178,11 @@
 - O retorno bem sucedido será o objeto acompanhado do Id da venda alterado.
 
  
-## 9 - Endpoint DELETE `/products`
+## 9 - Endpoint DELETE `/sales`
 - Deleta um produto do banco de dados;
 - O endpoint uma mensagem informando a deleção do produto e o status correspondente.
 
-## 10 - Controle de estoque
+## 10 - Controle de Estoque
 - A realização de novas vendas, a deleção ou atualização de vendas deve refletir na quantidade disponível em estoque do produto - que é controlado pelo banco de dados;
 - A regra de negócio deve ser aplicada na camada correta;
 - Não deve ser possível fechar uma venda caso não haja estoque disponível.
