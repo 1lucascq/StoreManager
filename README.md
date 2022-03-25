@@ -3,7 +3,6 @@
 - [Sobre o Projeto](#sobre-o-projeto)
   - [Principais tecnologias](#principais-tecnologias)
   - [Observações](#observações)
-- [Objetivos](#objetivos)
 - [Lista de objetivos](#lista-de-objetivos)
   - [1 - Testes Unitários](#1---testes-unitários)
   - [2 - Endpoints GET `/products e products/:id`](#2---endpoints-GET-products-e-productsid)
