@@ -14,7 +14,7 @@
   - [8 - Endpoint PUT `/sales/:id`](#8---endpoint-PUT-salesid)
   - [9 - Endpoint DELETE `/sales`](#9---endpoint-DELETE-sales)
   - [10 - Controle de Estoque](#10---controle-de-estoque)
-  [Implementações Futuras](#implementações-futuras )
+- [Implementações Futuras](#implementações-futuras )
 
 
 # Sobre o Projeto 
