@@ -24,6 +24,7 @@
 -O objetivo final do projeto é concluir uma aplicação de Backend CRUD funcional que maneje as operações de uma loja ficcional.
 -O desenvolvimento deve seguir as regras do modelo `MSC` e o padrão `REST`. Erros devem ser seguidos de mensagens personalizadas e o devido e adequado código do status.
 -Testes Unitários devem ser realizados para acompanhar o desenvolvimento seguro da aplicação.
+- TODOS os endpoints devem retornar erros tratando as exceções, privilegiando a consistência da aplicação.
 
 
 ## Principais tecnologias:
@@ -35,7 +36,7 @@
  - Joi;
 
 
-## Notas
+## Observações:
 - Caso deseje testar o projeto localmente o repositório acompanha um schema .sql para facilitar a implementação da aplicação.
 - O projeto requer o uso das seguintes variáveis de ambiente para o devido funcionamento:
 `host: process.env.HOSTNAME`
@@ -43,8 +44,6 @@
 `password: process.env.MYSQL_PASSWORD`
 `jwt_secret: process.env.JWT_SECRET`
 
-## OBS:
- - Todos os endpoints devem retornar erros com os devidos códigos referentes ao status do erro.
 ---
 # Lista de objetivos:
 
