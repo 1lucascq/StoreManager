@@ -36,7 +36,7 @@
 
 
 ## Notas
-- Caso deseje testar o projeto localmente o repositório acompanha uma tabela para facilitar a implementação da aplicação.
+- Caso deseje testar o projeto localmente o repositório acompanha um schema .sql para facilitar a implementação da aplicação.
 - O projeto requer o uso das seguintes variáveis de ambiente para o devido funcionamento:
 `host: process.env.HOSTNAME`
 `user: process.env.MYSQL_USER`
